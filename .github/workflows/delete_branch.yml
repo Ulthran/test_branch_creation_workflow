@@ -1,0 +1,16 @@
+name: Teardown Branch
+
+on:
+  create:
+    branches: "*"
+
+jobs:
+  teardown-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: HEY
+        run: |
+          echo ${{ github.event_name }}
