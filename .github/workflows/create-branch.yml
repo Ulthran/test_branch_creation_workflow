@@ -13,4 +13,4 @@ jobs:
 
       - name: HEY
         run: |
-          echo "HEY"
+          echo ${{ github.event_name }}
