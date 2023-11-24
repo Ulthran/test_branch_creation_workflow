@@ -13,4 +13,4 @@ jobs:
 
       - name: HEY
         run: |
-          echo ${{ github.ref_name }}
+          echo ${{ github.event.ref }}
