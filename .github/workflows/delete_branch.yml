@@ -1,7 +1,7 @@
 name: Teardown Branch
 
 on:
-  create:
+  delete:
     branches: "*"
 
 jobs:
